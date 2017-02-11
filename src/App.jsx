@@ -22,7 +22,7 @@ class App extends Component {
     }
 
     update = (event) => {
-        this.props.appState.setRawInput(event.target.value);
+        this.props.appState.rawInput = event.target.value;
     }
 };
 

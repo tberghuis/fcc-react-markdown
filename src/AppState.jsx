@@ -50,15 +50,13 @@ Spain.
 
 class AppState {
   @observable rawInput;
-  @observable markedOutput;
 
   constructor() {
-      this.setRawInput(initialState);
+      this.rawInput = initialState;
   }
 
-  setRawInput(value) {
-    this.rawInput = value;
-    this.markedOutput = marked(value);
+  @computed get markedOutput() {
+    return marked(this.rawInput);
   }
 }
 
