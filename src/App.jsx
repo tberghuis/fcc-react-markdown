@@ -6,7 +6,8 @@ class App extends Component {
     render() {
         return (
             <div className="container">
-                <h1>Markdown Previewer</h1><br/>
+                <div className="text-center"><h1>Markdown Previewer</h1></div>
+                <br/>
                 <div className="row">
                     <textarea className="col"
                         rows="22"
